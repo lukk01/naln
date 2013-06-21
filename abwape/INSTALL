@@ -1,0 +1,11 @@
+To compile abwape:
+
+1. Download bwa-0.6.1
+
+2. Compile bwa-0.6.1 as specified.
+
+3. Copy the files to bwa-0.6.1 directory
+
+4. Run makeBwape.sh
+
+Proper Makefile will (hopefully) will follow. Some day.
