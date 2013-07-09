@@ -1,0 +1,14 @@
+CC=			gcc
+CFLAGS=		-g -Wall -O2 #-m64 #-arch ppc
+EFLAGS=		-DHAVE_PTHREAD
+SAM2BAMOBJ=	sam.o
+PROG=		sam2bam
+
+all:$(PROG)
+
+sam2bam:
+		$(CC) -c sam2bam.c -pthread -o sam2bam.o
+		$(CC) $(CFLAGS) -o $@ $(SAM2BAMOBJ) sam2bam.o -Lbcftools libbam.a -lz -lpthread
+
+clean:
+		rm -fr sam2bam.o

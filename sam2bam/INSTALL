@@ -1,11 +1,9 @@
 Instructions for getting this code compiled and running:
 
-1. Download and compile samtools-0.1.17
+1. Download and compile samtools-0.1.18
 
-2. Copy sam2bam.c into samtools-0.1.17 directory.
+2. Copy sam2bam.c and Makefile.sam2bam into samtools-0.1.18 directory.
 
-3. Run makeSam2bam.sh.
+3. run 'make -f Makefile.sam2bam'
 
-A proper Makefile will follow. One day. Hopefully.
-
-The status of this code is: proof of concept; and work in progress.
+The code status: proof of concept; and work in progress.
